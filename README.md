@@ -49,6 +49,18 @@ Binary convolutional kernels with different sparsity levels.
 &nbsp;&nbsp;&nbsp;year={2017}<br>
 }
 
+
+```javascript
+@inproceedings{juefei-xu2017lbcnn,<br>
+&nbsp;&nbsp;&nbsp;title={{Local Binary Convolutional Neural Networks}},<br>
+&nbsp;&nbsp;&nbsp;author={Felix Juefei-Xu and Vishnu Naresh Boddeti and Marios Savvides},<br>
+&nbsp;&nbsp;&nbsp;booktitle={IEEE Computer Vision and Pattern Recognition (CVPR)},<br>
+&nbsp;&nbsp;&nbsp;month={July},<br>
+&nbsp;&nbsp;&nbsp;year={2017}<br>
+}
+```
+
+
 ***
 
 ### Implementations
