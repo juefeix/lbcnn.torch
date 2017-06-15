@@ -11,6 +11,7 @@ We propose **local binary convolution (LBC)**, an efficient alternative to convo
 ***
 
 ### Overview
+![](http://xujuefei.com/lbcnn_image/01_LBP_3_5.png | width=100)
 <img src="http://xujuefei.com/lbcnn_image/01_LBP_3_5.png" title="Local Binary Patterns" style="width: 100px;"/>
 <img src="http://xujuefei.com/lbcnn_image/02_LBP.png" title="Basic Idea of Local Binary Patterns" style="width: 200px;"/>
 
