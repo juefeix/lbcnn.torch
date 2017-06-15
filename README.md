@@ -11,8 +11,7 @@ We propose **local binary convolution (LBC)**, an efficient alternative to convo
 ***
 
 ### Overview
-<img src="http://xujuefei.com/lbcnn_image/01_LBP_3_5.png" width="300">
-<img src="http://xujuefei.com/lbcnn_image/02_LBP.png" width="500">
+<img src="http://xujuefei.com/lbcnn_image/01_LBP_3_5.png" width="300"><img src="http://xujuefei.com/lbcnn_image/02_LBP.png" width="500">
 
 We draw inspiration from local binary patterns that have been very successfully used for facial analysis.
 
