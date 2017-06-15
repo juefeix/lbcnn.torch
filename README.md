@@ -5,12 +5,12 @@ Torch implementation of CVPR'17 - Local Binary Convolutional Neural Networks htt
 (this repo is under construction)
 
 
-### Abstract
+## Abstract
 We propose **local binary convolution (LBC)**, an efficient alternative to convolutional layers in standard convolutional neural networks (CNN). The design principles of LBC are motivated by local binary patterns (LBP). The LBC layer comprises of a set of fixed sparse pre-defined binary convolutional filters that are not updated during the training process, a non-linear activation function and a set of learnable linear weights. The linear weights combine the activated filter responses to approximate the corresponding activated filter responses of a standard convolutional layer. The LBC layer affords significant parameter savings, 9x to 169x in the number of learnable parameters compared to a standard convolutional layer. Furthermore, the sparse and binary nature of the weights also results in up to 9x to 169x savings in model size compared to a standard convolutional layer. We demonstrate both theoretically and experimentally that our local binary convolution layer is a good approximation of a standard convolutional layer. Empirically, CNNs with LBC layers, called **local binary convolutional neural networks (LBCNN)**, achieves performance parity with regular CNNs on a range of visual datasets (MNIST, SVHN, CIFAR-10, and ImageNet) while enjoying significant computational savings.
 
 ***
 
-### Overview
+## Overview
 <img src="http://xujuefei.com/lbcnn_image/01_LBP_3_5.png" width="300"><img src="http://xujuefei.com/lbcnn_image/02_LBP.png" width="520">
 
 We draw inspiration from local binary patterns that have been very successfully used for facial analysis.
@@ -28,7 +28,7 @@ Binary convolutional kernels with different sparsity levels.
 
 ***
 
-### Contributions
+## Contributions
 
 * Convolutional kernels inspired by local binary patterns.
 * Convolutional neural network architecture with **non-mutable randomized sparse binary convolutional kernels**.
@@ -36,7 +36,7 @@ Binary convolutional kernels with different sparsity levels.
 
 ***
 
-### References
+## References
 
 * Felix Juefei-Xu, Vishnu Naresh Boddeti, and Marios Savvides, [**Local Binary Convolutional Neural Networks**](http://xujuefei.com/felix_cvpr17_lbcnn.pdf),
 * To appear in *IEEE Computer Vision and Pattern Recognition (CVPR), 2017*. (Spotlight Oral Presentation)
@@ -55,11 +55,11 @@ Binary convolutional kernels with different sparsity levels.
 
 ***
 
-### Implementations
+## Implementations
 
-The code base 
+The code base is built upon [fb.resnet.torch](https://github.com/facebook/fb.resnet.torch)
 
-## Requirements
+### Requirements
 See the [installation instructions](INSTALL.md) for a step-by-step guide.
 - Install [Torch](http://torch.ch/docs/getting-started.html) on a machine with CUDA GPU
 - Install [cuDNN v4 or v5](https://developer.nvidia.com/cudnn) and the Torch [cuDNN bindings](https://github.com/soumith/cudnn.torch/tree/R4)
@@ -67,14 +67,8 @@ See the [installation instructions](INSTALL.md) for a step-by-step guide.
 
 If you already have Torch installed, update `nn`, `cunn`, and `cudnn`.
 
-## Training
 
-The training scripts come with several options, which can be listed with the `--help` flag.
-```bash
-th main.lua --help
-```
-
-## Training Recipes
+### Training Recipes
 
 * MNIST
 ```bash
