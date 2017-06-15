@@ -11,25 +11,21 @@ We propose **local binary convolution (LBC)**, an efficient alternative to convo
 ***
 
 ### Overview
-<img src="http://xujuefei.com/lbcnn_image/01_LBP_3_5.png" width="300"><img src="http://xujuefei.com/lbcnn_image/02_LBP.png" width="500">
+<img src="http://xujuefei.com/lbcnn_image/01_LBP_3_5.png" width="300"><img src="http://xujuefei.com/lbcnn_image/02_LBP.png" width="550">
 
 We draw inspiration from local binary patterns that have been very successfully used for facial analysis.
 
-
-<img src="http://xujuefei.com/lbcnn_image/03_LBCNN_CNN.png" title="Local Binary Convolutional Module" style="width: 800px;"/>
-
+<img src="http://xujuefei.com/lbcnn_image/03_LBCNN_CNN.png" width="800">
 
 Our LBCNN module is designed to approximate a fully learnable dense CNN module.
-
-<img src="http://xujuefei.com/lbcnn_image/04_sparsity_2.png" title="Sparsity: 2" style="width: 260px;"/>
-<img src="http://xujuefei.com/lbcnn_image/04_sparsity_4.png" title="Sparsity: 4" style="width: 260px;"/>
-<img src="http://xujuefei.com/lbcnn_image/04_sparsity_9.png" title="Sparsity: 9" style="width: 260px;"/>
+<img src="http://xujuefei.com/lbcnn_image/04_sparsity_2.png" width="260">
+<img src="http://xujuefei.com/lbcnn_image/04_sparsity_4.png" width="260">
+<img src="http://xujuefei.com/lbcnn_image/04_sparsity_9.png" width="260">
 
 
 Binary convolutional kernels with different sparsity levels.
 
-<img src="http://xujuefei.com/lbcnn_image/05_theory.png" title="Main approximation theorem" style="width: 800px;"/>
-
+<img src="http://xujuefei.com/lbcnn_image/05_theory.png" width="800">
 
 ***
 
