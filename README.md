@@ -49,3 +49,12 @@ Binary convolutional kernels with different sparsity levels.
 &nbsp;&nbsp;&nbsp;year={2017}<br>
 }
 
+***
+
+### Implementations
+
+```javascript
+function test() {
+ console.log("look ma’, no spaces");
+}
+```
