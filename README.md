@@ -62,3 +62,18 @@ function test() {
  console.log("look ma’, no spaces");
 }
 ```
+
+* MNIST
+
+```
+th main.lua -netType resnet-binary-felix -dataset mnist -data '/media/Freya/juefeix/LBCNN' -save '/media/Freya/juefeix/LBCNN-Weights' -numChannels 16 -batchSize 10 -depth 75 -full 128 -sparsity 0.5
+```
+
+* SVHN
+
+```
+th main.lua -netType resnet-binary-felix -dataset svhn -data '/media/Freya/juefeix/LBCNN' -save '/media/Freya/juefeix/LBCNN-Weights' -numChannels 16 -batchSize 10 -depth 40 -full 512 -sparsity 0.9
+```
+* CIFAR-10
+
+
