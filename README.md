@@ -57,7 +57,7 @@ Binary convolutional kernels with different sparsity levels.
 
 ## Implementations
 
-The code base is built upon [fb.resnet.torch](https://github.com/facebook/fb.resnet.torch)
+The code base is built upon [fb.resnet.torch](https://github.com/facebook/fb.resnet.torch).
 
 ### Requirements
 See the [installation instructions](INSTALL.md) for a step-by-step guide.
@@ -69,6 +69,8 @@ If you already have Torch installed, update `nn`, `cunn`, and `cudnn`.
 
 
 ### Training Recipes
+
+The `numChannels` parameter corresponds to the `output channels` in the paper.
 
 * MNIST
 ```bash
