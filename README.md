@@ -57,14 +57,26 @@ Binary convolutional kernels with different sparsity levels.
 
 ### Implementations
 
-```javascript
-function test() {
- console.log("look ma’, no spaces");
-}
+The code base 
+
+## Requirements
+See the [installation instructions](INSTALL.md) for a step-by-step guide.
+- Install [Torch](http://torch.ch/docs/getting-started.html) on a machine with CUDA GPU
+- Install [cuDNN v4 or v5](https://developer.nvidia.com/cudnn) and the Torch [cuDNN bindings](https://github.com/soumith/cudnn.torch/tree/R4)
+- Download the [ImageNet](http://image-net.org/download-images) dataset and [move validation images](https://github.com/facebook/fb.resnet.torch/blob/master/INSTALL.md#download-the-imagenet-dataset) to labeled subfolders
+
+If you already have Torch installed, update `nn`, `cunn`, and `cudnn`.
+
+## Training
+
+The training scripts come with several options, which can be listed with the `--help` flag.
+```bash
+th main.lua --help
 ```
 
-* MNIST
+## Training Recipes
 
+* MNIST
 ```bash
 th main.lua -netType resnet-binary-felix -dataset mnist -data '/media/Freya/juefeix/LBCNN' -save '/media/Freya/juefeix/LBCNN-Weights' -numChannels 16 -batchSize 10 -depth 75 -full 128 -sparsity 0.5
 ```
