@@ -38,7 +38,7 @@ Binary convolutional kernels with different sparsity levels.
 
 ### References
 
-* Felix Juefei-Xu, Vishnu Naresh Boddeti, and Marios Savvides, [**Local Binary Convolutional Neural Networks**](felix_cvpr17_lbcnn.pdf),
+* Felix Juefei-Xu, Vishnu Naresh Boddeti, and Marios Savvides, [**Local Binary Convolutional Neural Networks**](http://xujuefei.com/felix_cvpr17_lbcnn.pdf),
 * To appear in *IEEE Computer Vision and Pattern Recognition (CVPR), 2017*. (Spotlight Oral Presentation)
 
 
