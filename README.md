@@ -78,10 +78,11 @@ th main.lua -netType resnet-binary-felix -dataset mnist -data '/media/Freya/juef
 ```
 
 * SVHN
-
 ```bash
 th main.lua -netType resnet-binary-felix -dataset svhn -data '/media/Freya/juefeix/LBCNN' -save '/media/Freya/juefeix/LBCNN-Weights' -numChannels 16 -batchSize 10 -depth 40 -full 512 -sparsity 0.9
 ```
+
 * CIFAR-10
-
-
+```bash
+th main.lua -netType resnet-binary-felix -dataset cifar10 -data '/media/Caesar/juefeix/LBCNN' -save '/media/Caesar/juefeix/LBCNN-Weights' -numChannels 384 -numWeights 704 -batchSize 5 -depth 50 -full 512 -sparsity 0.001
+```
