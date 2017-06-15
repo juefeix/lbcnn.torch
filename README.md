@@ -15,18 +15,16 @@ We propose **local binary convolution (LBC)**, an efficient alternative to convo
 
 We draw inspiration from local binary patterns that have been very successfully used for facial analysis.
 
-<img src="http://xujuefei.com/lbcnn_image/03_LBCNN_CNN.png" width="800">
+<img src="http://xujuefei.com/lbcnn_image/03_LBCNN_CNN.png" width="820">
 
 Our LBCNN module is designed to approximate a fully learnable dense CNN module.
 
-<img src="http://xujuefei.com/lbcnn_image/04_sparsity_2.png" width="260">
-<img src="http://xujuefei.com/lbcnn_image/04_sparsity_4.png" width="260">
-<img src="http://xujuefei.com/lbcnn_image/04_sparsity_9.png" width="260">
+<img src="http://xujuefei.com/lbcnn_image/04_sparsity_2.png" width="260"><img src="http://xujuefei.com/lbcnn_image/04_sparsity_4.png" width="260"><img src="http://xujuefei.com/lbcnn_image/04_sparsity_9.png" width="260">
 
 
 Binary convolutional kernels with different sparsity levels.
 
-<img src="http://xujuefei.com/lbcnn_image/05_theory.png" width="800">
+<img src="http://xujuefei.com/lbcnn_image/05_theory.png" width="820">
 
 ***
 
