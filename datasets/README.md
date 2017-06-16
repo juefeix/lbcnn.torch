@@ -5,7 +5,7 @@ the `dataset.lua` handles the actual data loading.
 
 ### `dataset-gen.lua`
 
-The `dataset-gen.lua` performs any necessary one-time setup. For example, the [`cifar10-gen.lua`](cifar10-gen.lua) file downloads the CIFAR-10 dataset, and the [`imagenet-gen.lua`](imagenet-gen.lua) file indexes all the training and validation data.
+The `dataset-gen.lua` performs any necessary one-time setup. For example, the [`cifar10-gen.lua`](cifar10-gen.lua) file downloads the CIFAR-10 dataset.
 
 The module should have a single function `exec(opt, cacheFile)`.
 - `opt`: the command line options
@@ -29,36 +29,3 @@ The `dataset.lua` should return a class that implements three functions:
   - `target`: the image category as a number 1-N
 - `size()`: returns the number of entries in the dataset
 - `preprocess()`: returns a function that transforms the `input` for data augmentation or input normalization
-
-```lua
-local M = {}
-local FakeDataset = torch.class('resnet.FakeDataset', M)
-
-function FakeDataset:__init(imageInfo, opt, split)
-  -- imageInfo: result from dataset-gen.lua
-  -- opt: command-line arguments
-  -- split: "train" or "val"
-end
-
-function FakeDataset:get(i)
-  return {
-    input = torch.Tensor(3, 800, 600):uniform(),
-    target = 42,
-  }
-end
-
-function FakeDataset:size()
-  -- size of dataset
-  return 2000 
-end
-
-function FakeDataset:preprocess()
-  -- Scale smaller side to 256 and take 224x224 center-crop
-  return t.Compose{
-    t.Scale(256),
-    t.CenterCrop(224),
-  }
-end
-
-return M.FakeDataset
-```
