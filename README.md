@@ -85,12 +85,12 @@ th main.lua -netType resnet-binary-felix -dataset mnist -data '/media/Freya/juef
  
 * SVHN
 
-*CNN
+*CNN*
 ```bash
 th main.lua -netType resnet-dense-felix -dataset svhn -data '/media/Freya/juefeix/LBCNN' -save '/media/Freya/juefeix/LBCNN-Weights' -numChannels 16 -batchSize 10 -depth 40 -full 512
 ```
 
-*LBCNN (~94.5% after 80 epochs)
+*LBCNN (~94.5% after 80 epochs)*
 ```bash
 th main.lua -netType resnet-binary-felix -dataset svhn -data '/media/Freya/juefeix/LBCNN' -save '/media/Freya/juefeix/LBCNN-Weights' -numChannels 16 -batchSize 10 -depth 40 -full 512 -sparsity 0.9
 ```
