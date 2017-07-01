@@ -77,7 +77,7 @@ The `numChannels` parameter corresponds to the `output channels` in the paper.
 th main.lua -netType resnet-dense-felix -dataset mnist -data '/media/Freya/juefeix/LBCNN' -save '/media/Freya/juefeix/LBCNN-Weights' -numChannels 16 -batchSize 10 -depth 75 -full 128
 ```
  
-*LBCNN (~99.5% after 80 epochs)
+*LBCNN (~99.5% after 80 epochs)*
 
 ```bash
 th main.lua -netType resnet-binary-felix -dataset mnist -data '/media/Freya/juefeix/LBCNN' -save '/media/Freya/juefeix/LBCNN-Weights' -numChannels 16 -batchSize 10 -depth 75 -full 128 -sparsity 0.5
