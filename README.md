@@ -10,9 +10,9 @@ Torch implementation of CVPR'17 - Local Binary Convolutional Neural Networks htt
 
 ### People
 
-[Felix Juefei Xu](http://xujuefei.com) [(Contact)](mailto:juefei.xu[at]gmail.com)
+[Felix Juefei Xu](http://xujuefei.com)
 
-[Vishnu Naresh Boddeti](http://vishnu.boddeti.net) [(Contact)](mailto:vishnu[at]msu.edu)
+[Vishnu Naresh Boddeti](http://vishnu.boddeti.net)
 
 Marios Savvides
 
